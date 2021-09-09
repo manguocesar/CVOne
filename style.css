@@ -1,0 +1,202 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+table {
+  font-family: Helvetica;
+  margin: 0px;
+}
+
+h1 {
+  font-size: 40px;
+  margin: 10px 0px;
+}
+
+h2 {
+  font-size: 25px;
+  margin: 10px 0px;
+}
+
+h4 {
+  font-size: 14px;
+}
+
+h5 {
+  font-size: 13px;
+  font-style: normal;
+}
+
+p {
+  font-size: 13px;
+  margin: 2px;
+  font-style: normal;
+  text-align: justify;
+}
+
+body {
+  margin: auto;
+}
+
+span {
+  font-weight: normal;
+  font-style: italic;
+}
+
+table {
+  border-spacing: 5px;
+  font-size: 13px;
+  font-weight: normal;
+  font-style: italic;
+  width: 90%;
+  padding: 0px;
+  margin: 0px;
+}
+
+.columnsDisplay {
+  display: flex;
+}
+
+.column1 {
+  flex: 35%;
+  background-color: #e4e4e4;
+  padding: 40px 30px 30px 30px;
+}
+
+.column2 {
+  flex: 65%;
+  /* width: 900px; */
+  padding: 10px 40px 40px 20px;
+  margin: 0px 0px 0px 0px;
+}
+
+.profileimage {
+  border: solid 3px;
+  border-color: white;
+  border-radius: 50%;
+  animation: imgAnimate 4s infinite;
+  align-self: center;
+  align-content: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@keyframes imgAnimate {
+  from {
+    border-color: red;
+  }
+  to {
+    border-color: yellow;
+  }
+}
+
+.footer {
+  color: white;
+  background-color: #0a0a0a;
+  padding: 30px 30px;
+  font-family: verdana;
+  height: 40px;
+  text-align: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.footer img {
+  width: 30px;
+  height: 30px;
+  border: none;
+  animation: none;
+  border-radius: 0px;
+}
+
+.divider {
+  background-color: #e4e4e4;
+  height: 10px;
+}
+
+.skills1 {
+  background-color: #e4e4e4;
+  width: 230px;
+  height: 10px;
+}
+
+.skills2 {
+  background-color: black;
+  width: 100px;
+  height: 10px;
+  animation: skill2Animation 7s infinite;
+}
+
+.skills3 {
+  background-color: black;
+  width: 180px;
+  height: 10px;
+  animation: skill3Animation 8s infinite;
+}
+
+@keyframes skill2Animation {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 60%;
+  }
+}
+
+@keyframes skill3Animation {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 80%;
+  }
+}
+
+#moreSkills {
+  display: none;
+}
+
+.boldTitle {
+  font-weight: bold;
+  font-style: normal;
+}
+
+.extra {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+button {
+  border-radius: 3px;
+  padding: 5px 10px;
+}
+
+@media screen and (max-width: 800px) {
+  .column1 {
+    /* width: 250px; */
+    flex: 30%;
+  }
+
+  .column2 {
+    /* width: 600px; */
+    flex: 70%;
+  }
+
+  .extra {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .columnsDisplay {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .column1 h1 {
+    font-size: 35px;
+  }
+}
